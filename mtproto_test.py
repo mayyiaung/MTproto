@@ -12,7 +12,7 @@ api_hash = 'fb050b8f6771e15bfda5df2409931569'
 async def main():
     client = TelegramClient('session_name', api_id, api_hash)
     await client.start()
-    # added by mayyi
+    # added by mayyi june 2022
     print((await client.get_me()).stringify())
     await client.send_message('username', 'Hello! Talking to you from Telethon')
     await client.send_file('username', '/home/may/Pictures/8.png')
